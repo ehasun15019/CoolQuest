@@ -19,8 +19,8 @@
 .shield 
 {
     position: absolute;
-    right: 14px;
-    top: 10px;
+    right: 30px;
+    top: 31px;
 }
 
 .man-section 
@@ -30,3 +30,16 @@
     /* left: 20px; */
 }
 
+.google 
+{
+    position: absolute;
+    bottom: 30px;
+    left: 48px;
+}
+
+
+.wranty-section 
+{
+    position: absolute;
+    left: 44px;
+}
