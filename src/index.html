@@ -6,10 +6,14 @@
     <title>CoolQuest</title>
     <link rel="stylesheet" href="./output.css" />
     <link rel="stylesheet" href="input.css">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
   </head>
   <body>
-    <div class="bg-[linear-gradient(to_right,_#0d1f14,_#0e3f1e)] main-container flex flex-col">
+    <!-- HEADER SECTION START -->
+    <div class="bg-[linear-gradient(to_right,_#0d1f14,_#0e3f1e)] main-container flex flex-col pb-[80px]">
+      <!-- <div class="bg-[url(./img/design.png)] bg-repeat"></div> -->
       <nav class="nav w-[1100px]">
         <div class="logo-section">
           <a href="index.html">
@@ -53,19 +57,19 @@
           </div>
 
           <!-- from section  -->
-          <form action="" class="bg-white px-3.5 py-2.5 rounded-[10px]">
+          <form action="" class="bg-white px-3.5 py-2.5 rounded-[10px] my-5">
             <div class="first-input-sec">
-              <input type="text" placeholder="Name" class="border-[#07521d] border-2 rounded-[5px] text-black  px-4.5 py-1.5">
-              <input type="number" placeholder="Phone" class="border-[#07521d] border-2 rounded-[5px] text-black  px-4.5 py-1.5">
+              <input type="text" placeholder="Name" class="border-[#07521d] border-2 rounded-[5px] text-black  px-2.5 py-1.5">
+              <input type="number" placeholder="Phone" class="border-[#07521d] border-2 rounded-[5px] text-black  px-2.5 py-1.5">
             </div>
 
             <div class="second-input-sec mt-3.5">
-              <select name="" id="" class="border-[#07521d] border-2 rounded-[5px] text-black pe-27 ps-2 py-1.5">
+              <select name="" id="" class="border-[#07521d] border-2 rounded-[5px] text-black pe-23 ps-2 py-1.5">
                 <option value="" class="text-black">service</option>
                 <option value="" class="text-black">About Us</option>
               </select>
 
-              <button type="submit" class="bg-[#07521d] text-white px-20 py-1.5 rounded-[5px]">Submit</button>
+              <button type="submit" class="bg-[#07521d] text-white px-17.5 py-2 rounded-[5px]">Submit</button>
             </div>
           </form>
 
@@ -82,13 +86,15 @@
            </div>
         </div>
 
+        
         <div class="header-2 text-white">
-          <div class="warranty-section  h-[310px] w-[555px] bg-white rounded">
+          <!-- warranty section -->
+          <div class="warranty-section  h-[310px] w-[560px] bg-white rounded">
             <!-- shield section -->
-            <div class="shield border-4 bg-[#eff0f0] rounded-lg border-[#eff0f0] w-[140px] flex items-center justify-center">
-              <div class="shield-content bg-white flex flex-col items-center w-[130px] px-1 py-1 rounded-lg">
+            <div class="shield shield-container">
+              <div class="shield-content">
                 <img src="./img/logo/shield-02.png" class="w-[25px]" alt="shield">
-                <p class="text-black">C20-987654</p>
+                <p class="text-black text-sm">C20-987654</p>
               </div>
             </div>
 
@@ -98,8 +104,8 @@
             </div>
 
             <!-- google section -->
-             <div class="google border-4 bg-[#eff0f0] rounded-lg border-[#eff0f0] w-[140px] flex items-center justify-center">
-              <div class="google-content bg-white flex flex-col items-center w-[130px] px-1 py-1 rounded-lg">
+             <div class="google google-container">
+              <div class="google-content">
                 <img src="./img/logo/google.png" class="w-[25px]" alt="shield">
                 <p class="text-black">C20-987654</p>
               </div>
@@ -107,12 +113,119 @@
 
 
             <!-- wranty section  -->
-             <div class="wranty-section bg-white h-[150px] w-[150px] rounded-full shadow-md">
+             <div class="wranty-section">
               <img src="./img/logo/wranty.png" alt="wranty">
              </div>
+          </div>
+
+
+          <!-- view details section -->
+          <div class="details-section flex gap-2.5 mt-3">
+            <div class="details-1 bg-[url(./img/techian/t1.png)] bg-cover h-[143px] w-[275px] rounded-b-lg relative">
+              <a href="#" class="bg-[#0B5D1E] px-3.5 py-2 rounded-tl-lg absolute bottom-0 right-0">View details</a>
+            </div>
+
+            <div class="details-2 bg-[url(./img/techian/t2.png)] bg-cover h-[143px] w-[275px] rounded-b-lg relative">
+              <a href="#" class="bg-[#0B5D1E] px-3.5 py-2 rounded-tl-lg absolute bottom-0 right-0">View details</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- HEADER SECTION END -->
+
+
+    <!-- TRUSTED SECTION START -->
+     <div class="trusted-container mt-20 mb-20">
+      <h1 class="text-4xl font-semibold text-center">Trusted by Families Like Yours</h1>
+
+      <div class="card-section">
+        <div class="card-1 card">
+          <div class="img-sec">
+            <img src="./img/client/c1.png" alt="client">
+          </div>
+          <h5 class="pt-2">Mason Carter</h5>
+
+          <div class="rating-section">
+            <i class="fa-solid fa-star text-[#d8ca1f]"></i>
+            <i class="fa-solid fa-star text-[#d8ca1f]"></i>
+            <i class="fa-solid fa-star text-[#d8ca1f]"></i>
+            <i class="fa-solid fa-star text-[#d8ca1f]"></i>
+            <i class="fa-solid fa-star text-[#d8ca1f]"></i>
+          </div>
+
+          <p class="text-[1.2rem] text-[#555659] font-medium py-3.5">
+            “Super professional service, quick <br>
+            installation, and everything works <br>
+            perfectly. Highly recommend!”
+          </p>
+
+
+          <div class="google-section flex items-center flex-col">
+            <img src="./img/logo/google.png" alt="google">
+            <p class="text-[1.2rem] pt-2">Reviewed on Google</p>
+          </div>
+        </div>
+
+        <div class="card-2 card bg-[#0b5e23]">
+          <div class="img-sec">
+            <img src="./img/client/c2.png" alt="client">
+          </div>
+          <h5 class="pt-2 text-white">Chloe Anderson</h5>
+
+          <div class="rating-section">
+            <i class="fa-solid fa-star text-[#d8ca1f]"></i>
+            <i class="fa-solid fa-star text-[#d8ca1f]"></i>
+            <i class="fa-solid fa-star text-[#d8ca1f]"></i>
+            <i class="fa-solid fa-star text-[#d8ca1f]"></i>
+            <i class="fa-solid fa-star text-[#d8ca1f]"></i>
+          </div>
+
+          <p class="text-[1.2rem] font-medium py-3.5 text-white">
+            “Very happy with their work! The <br>
+            team was efficient and the new <br>
+            system runs great.”
+          </p>
+
+          <div class="google-section flex items-center flex-col">
+            <img src="./img/logo/google.png" alt="google">
+            <p class="text-[1.2rem] pt-2 text-white">Reviewed on Google</p>
+          </div>
+        </div>
+
+        <div class="card-3 card">
+          <div class="img-sec">
+            <img src="./img/client/c3.png" alt="client">
+          </div>
+          <h5 class="pt-2">Skylar Bennett</h5>
+
+          <div class="rating-section">
+            <i class="fa-solid fa-star text-[#d8ca1f]"></i>
+            <i class="fa-solid fa-star text-[#d8ca1f]"></i>
+            <i class="fa-solid fa-star text-[#d8ca1f]"></i>
+            <i class="fa-solid fa-star text-[#d8ca1f]"></i>
+            <i class="fa-solid fa-star text-[#d8ca1f]"></i>
+          </div>
+
+          <p class="text-[1.2rem] font-medium py-3.5">
+            “Great experience from start to  <br>
+            finish. Honest pricing and top- <br>
+            notch service!”
+          </p>
+
+
+          <div class="google-section flex items-center flex-col">
+            <img src="./img/logo/google.png" alt="google">
+            <p class="text-[1.2rem] pt-2">Reviewed on Google</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="view-more-btn-section flex items-center justify-center mt-10">
+        <button class="bg-[#0b5e23] px-6 py-3 rounded-[8px] text-white">View More</button>
+      </div>
+     </div>
+    <!-- TRUSTED SECTION START -->
   </body>
 </html>
