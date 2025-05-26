@@ -12,9 +12,8 @@
   </head>
   <body class="bg-white">
     <!-- HEADER SECTION START -->
-    <div class="bg-[linear-gradient(to_right,_#0d1f14,_#0e3f1e)] main-container flex flex-col pb-[80px]">
-      <!-- <div class="bg-[url(./img/design.png)] bg-repeat"></div> -->
-      <nav class="nav w-[1100px]">
+    <div class="bg-[url(./img/pattern.jpg)] bg-cover main-container flex flex-col pb-[80px]">
+      <!-- <nav class="nav w-[1100px]">
         <div class="logo-section">
           <a href="index.html">
             <img src="./img/logo/logo.png" alt="logo">
@@ -30,7 +29,46 @@
         <button class="bg-[#07521d] text-white px-4 py-2 rounded-full p-3">
           Get Free Quote
         </button>
+      </nav> -->
+
+      <!-- navbar daisyUI  -->
+      <nav class="flex justify-center items-center mt-6 px-6">
+        <div class="navbar bg-white text-black shadow-sm w-[1100px] rounded-4xl px-10 justify-between">
+          <div class="navbar-start">
+            <a href="index.html">
+              <img src="./img/logo/logo.png" alt="logo">
+            </a>
+          </div>
+
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="text-[1rem]"><a>About us</a></li>
+              <li class="text-[1rem]"><a>Services</a></li>
+              <li class="text-[1rem]"><a>Past Work</a></li>
+              <li class="text-[1rem]"><a>Reviews</a></li>
+            </ul>
+          </div>
+
+          <div class="navbar-end hidden lg:flex">
+            <a class="btn bg-[#07521d] px-9 rounded-4xl">Get Free Quote</a>
+          </div>
+
+          <div class="dropdown dropdown-end lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[100] p-2 shadow bg-white rounded-box w-52 right-0">
+              <li><a>About Us</a></li>
+              <li><a>Services</a></li>
+              <li><a>Past Work</a></li>
+              <li><a>Reviews</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
+
 
       <div class="header-section flex justify-between w-[1100px] mt-30 mx-auto">
         <div class="header-1 text-white">
@@ -163,7 +201,7 @@
 
           <div class="google-section flex items-center flex-col">
             <img src="./img/logo/google.png" alt="google">
-            <p class="text-[1.2rem] pt-2">Reviewed on Google</p>
+            <p class="text-[1.2rem] pt-2 text-black">Reviewed on Google</p>
           </div>
         </div>
 
@@ -216,7 +254,7 @@
 
           <div class="google-section flex items-center flex-col">
             <img src="./img/logo/google.png" alt="google">
-            <p class="text-[1.2rem] pt-2">Reviewed on Google</p>
+            <p class="text-[1.2rem] pt-2 text-black">Reviewed on Google</p>
           </div>
         </div>
       </div>
@@ -411,28 +449,71 @@
 
 
     <!-- COMFORT SECTION START -->
-     <!-- <div class="comfort-section">
+     <div class="comfort-section">
       <h1 class="text-4xl font-semibold text-center pt-15 text-black">How We Bring Comfort to Your Home</h1>
 
       <div class="comfort-card-container flex justify-center items-center">
-        <div class="card w-96 shadow-none">
-            <figure>
-              <img src="./img/card/c1.png" alt="technician"/>
-            </figure>
+        <div class="card w-90 shadow-none">
+          <figure  class="relative">
+            <img src="./img/card/c1.png" alt="Shoes"/>
 
-            <div class="card-body text-black p-0 bg-[#EDFDF1]">
-              <h2 class="card-title pt-2">Air Conditioner Installation</h2>
-              <p class="paragraph">
-                Stay cool all summer with fast, professional AC 
-                installations built to last.
-              </p>
-              <div class="card-actions justify-start">
-                <button class="btn bg-[#07521d] border-0">Explore Service</button>
-              </div>
+            <div class="bg-[#07521d] px-6 py-3 rounded-[10px] absolute left-12">
+              <img src="./img/i1.png" alt="">
             </div>
+
+            <div class="card-body bg-[#EDFDF1]  text-black absolute bottom-0 w-[248px] rounded-b-2xl">
+              <h2 class="card-title">Schedule a Consultation</h2>
+              <p class="paragraph">Contact us to book your free consultation with our HVAC experts.</p>
+            </div>
+          </figure>
+        </div>
+
+        <div class="card w-90 shadow-none">
+          <figure  class="relative">
+            <img src="./img/card/c2.png" alt="Shoes"/>
+
+            <div class="bg-[#07521d] px-6 py-3 rounded-[10px] absolute left-12">
+              <img src="./img/i2.png" alt="">
+            </div>
+
+            <div class="card-body bg-[#EDFDF1]  text-black absolute bottom-0 w-[248px] rounded-b-2xl">
+              <h2 class="card-title">Get a Custom Quote</h2>
+              <p class="paragraph">We assess your needs and provide a clear, no-obligation quote.</p>
+            </div>
+          </figure>
+        </div>
+
+        <div class="card w-90 shadow-none">
+          <figure  class="relative">
+            <img src="./img/card/c3.png" alt="Shoes"/>
+
+            <div class="bg-[#07521d] px-6 py-3 rounded-[10px] absolute left-12">
+              <img src="./img/i3.png" alt="">
+            </div>
+
+            <div class="card-body bg-[#EDFDF1]  text-black absolute bottom-0 w-[248px] rounded-b-2xl">
+              <h2 class="card-title">Professional Installation</h2>
+              <p class="paragraph">Our certified team installs your system with precision and care.</p>
+            </div>
+          </figure>
+        </div>
+
+        <div class="card w-90 shadow-none">
+        <figure  class="relative">
+          <img src="./img/card/c4.png" alt="Shoes"/>
+
+          <div class="bg-[#07521d] px-6 py-3 rounded-[10px] absolute left-8">
+            <img src="./img/i4.png" alt="">
+          </div>
+
+          <div class="card-body bg-[#EDFDF1]  text-black absolute bottom-0 w-[248px] rounded-b-2xl">
+            <h2 class="card-title">Enjoy Total Comfort</h2>
+            <p class="paragraph">Experience efficient heating and cooling all year round.</p>
+          </div>
+        </figure>
         </div>
       </div>
-     </div> -->
+     </div>
     <!-- COMFORT SECTION END -->
 
 
