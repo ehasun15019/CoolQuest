@@ -1427,6 +1427,9 @@
   .mt-\[20px\] {
     margin-top: 20px;
   }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
   }
